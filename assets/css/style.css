@@ -1,3 +1,9 @@
+* {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 172%;
+}
 body {
     position: relative;
 }
@@ -89,4 +95,10 @@ h1 {
     position: absolute;
     top: 2850px;
     left: 1200px;
+}
+#div00:hover,#div01:hover,#div02:hover,#div03:hover{
+    background-color: #232A56;
+}
+#div00:hover h4,#div01:hover h4,#div02:hover h4,#div03:hover h4{
+    color: white;
 }
