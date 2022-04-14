@@ -102,3 +102,8 @@ h1 {
 #div00:hover h4,#div01:hover h4,#div02:hover h4,#div03:hover h4{
     color: white;
 }
+@media screen and (max-width: 1000px) {
+    body {
+        position: absolute;
+    }
+  }
