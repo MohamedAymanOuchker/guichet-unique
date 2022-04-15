@@ -68,7 +68,7 @@
                 <button type="button" class="btn custom-btn" style="width: 170px;">En savoir plus</button>
             </div>
 
-            <div class="social-links">
+            <div class="social-links" id="s-l">
                 <img src="assets/images/instagram.png" alt="" style="width: 30px; height: 30px; margin-bottom: 10px;"> <br>
                 <img src="assets/images/facebook.png" alt="" style="width: 30px; height: 30px; margin-bottom: 10px;"> <br>
                 <img src="assets/images/twitter.png" alt="" style="width: 30px; height: 30px; margin-bottom: 10px;"> <br>
@@ -116,15 +116,15 @@
             <h2 style="padding-top: 80px;">Nos Indicateurs</h2>
             <p>Toutes les demarches disponibles via Portnet</p>
             <div class="row justify-content-between">
-                <div class="col-4 border-2 rounded shadow-sm text-center indicateur-section" style="padding-top: 70px; padding-left: 40px; padding-right: 40px;">
+                <div class="col-4 border-2 rounded shadow-sm text-center indicateur-section" id="i1" style="padding-top: 70px; padding-left: 40px; padding-right: 40px;">
                     <h2 style="font-size: 50px;">4K</h2>
                     <p>Nbr de conteneurs <br> inspectés</p>
                 </div>
-                <div class="col-4 rounded shadow-lg text-center indicateur-section" style="padding-top: 70px; padding-left: 40px; padding-right: 40px;">
+                <div class="col-4 border-2 rounded shadow-sm text-center indicateur-section" id="i2" style="padding-top: 70px; padding-left: 40px; padding-right: 40px;">
                     <h2 style="font-size: 50px;">24k</h2>
                     <p>Nbr de conteneurs <br> inspectés</p>
                 </div>
-                <div class="col-4 border-2 rounded shadow-sm text-center indicateur-section" style="padding-top: 70px; padding-left: 40px; padding-right: 40px;">
+                <div class="col-4 border-2 rounded shadow-sm text-center indicateur-section" id="i3" style="padding-top: 70px; padding-left: 40px; padding-right: 40px;">
                     <h2 style="font-size: 50px;">8,31J</h2>
                     <p>Délai moyen <br> de séjour global</p>
                 </div>
@@ -166,11 +166,17 @@
         </div>  
     </main>
 
-    <div class="container-fluid row">
+    <div class="row fixed">
       <div class="col contact-section text-center" style="background: linear-gradient(180.99deg, #242B59 53.38%, rgba(68, 81, 168, 0) 459.34%); padding-top: 100px; padding-left: 40px; padding-right: 40px;">
         <h3 style="font-size: 30px;">Nouveau sur Guichet unique ?</h3>
         <p style="font-size: 20px;">Inscrivez-vous à notre newsletter <br> pour recevoir nos actualités</p>
-        <input type="email" class="" placeholder="Entrer votre adresse émail" style="width: 500px; height: 50px;">
+        <div class="input-group">
+          <!-- <span>
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+          </span> -->
+          <img class="fa" src="assets/images/mail.png" alt="">
+          <input type="email" class="form-control" placeholder="Entrer votre adresse émail" style="width: 80px;">
+        </div>
       </div>
       <div class="col contact-section text-center background">
         <div class="layer">
@@ -213,7 +219,7 @@
           <li class="list-inline-item"><a class="link-dark" style="text-decoration: none;" href="#">Politique de cookies</a></li>
           <li class="list-inline-item"><a class="link-dark" style="text-decoration: none;" href="#">Conditions générales</a></li>
           <li class="list-inline-item"><a class="link-dark" style="text-decoration: none;" href="#">Politique de confidentialité</a></li>
-          <li class="list-inline-item"><img class="chat-icon" src="assets/images/chat.png" alt="" width="96" height="96"></li>
+          <li class="list-inline-item"><button><img class="chat-icon" src="assets/images/chat.png" alt="" width="96" height="96"></button></li>
         </ul>
       </div>
     </footer> 
@@ -240,6 +246,31 @@
           $('#div03').hover(
               function(){$('#img03').attr("src","assets/images/right-arrow-white.png")},
               function(){$('#img03').attr("src","assets/images/right-arrow.png")}
+          );
+      });
+      
+      $(window).scroll(function(){
+        $("#s-l").css({"margin-top": ($(window).scrollTop()) + "px", "margin-left":($(window).scrollLeft()) + "px"});
+      });
+
+      $(document).ready(function(){
+          $('#i1').hover(
+              function(){$('#i1').attr("class","col-4 rounded shadow-lg text-center indicateur-section")},
+              function(){$('#i1').attr("class","col-4 border-2 rounded shadow-sm text-center indicateur-section")}
+          );
+      });
+
+      $(document).ready(function(){
+          $('#i2').hover(
+              function(){$('#i2').attr("class","col-4 rounded shadow-lg text-center indicateur-section")},
+              function(){$('#i2').attr("class","col-4 border-2 rounded shadow-sm text-center indicateur-section")}
+          );
+      });
+
+      $(document).ready(function(){
+          $('#i3').hover(
+              function(){$('#i3').attr("class","col-4 rounded shadow-lg text-center indicateur-section")},
+              function(){$('#i3').attr("class","col-4 border-2 rounded shadow-sm text-center indicateur-section")}
           );
       });
   </script>

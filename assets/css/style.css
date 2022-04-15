@@ -39,6 +39,7 @@ main {
 }
 h1 {
     font-size: 60px;
+    font-weight: 800;
 }
 .first-cont {
     margin-top: 120px;
@@ -101,6 +102,21 @@ h1 {
 }
 #div00:hover h4,#div01:hover h4,#div02:hover h4,#div03:hover h4{
     color: white;
+}
+.fa{
+    width: 16px;
+    height: 16px;
+    margin-top: 10px;
+}
+.input-group{
+    border: 1px gray solid;
+    padding: 6px;
+    margin-left: 96px;
+    background-color: white;
+    width: 500px;
+}
+.form-control{
+    border: none;
 }
 @media screen and (max-width: 1000px) {
     body {
