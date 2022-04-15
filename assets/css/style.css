@@ -96,6 +96,8 @@ h1 {
     position: absolute;
     top: 2850px;
     left: 1200px;
+    width: 96px;
+    height: 96px;
 }
 #div00:hover,#div01:hover,#div02:hover,#div03:hover{
     background-color: #232A56;
