@@ -81,7 +81,8 @@ h1 {
     color: white;
 }
 div.background {
-    background: url(assets/images/unsplash_mHusyBu4bxM.png) repeat;
+    background: url(
+        unsplash_mHusyBu4bxM.png) repeat;
 }
 div.layer {
     background-color: rgba(120, 128, 179, 0.7);
