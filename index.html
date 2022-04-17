@@ -8,12 +8,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Guichet Unique</title>
 </head>
 <body>
@@ -68,7 +64,7 @@
                 <button type="button" class="btn custom-btn" style="width: 170px;">En savoir plus</button>
             </div>
 
-            <div class="social-links" id="s-l">
+            <div class="social-links" id="scroller">
                 <input type="image" src="assets/images/instagram.png" style="width: 30px; height: 30px; margin-bottom: 10px;"/> <br>
                 <input type="image" src="assets/images/facebook.png" style="width: 30px; height: 30px; margin-bottom: 10px;"/> <br>
                 <input type="image" src="assets/images/twitter.png" style="width: 30px; height: 30px; margin-bottom: 10px;"/> <br>
@@ -78,37 +74,37 @@
 
             <h2 style="padding-top: 80px;">Nos services</h2>
             <p>Toutes les demarches disponibles via Portnet</p>
-            <div class="row justify-content-between">
-                <div class="col-3 border rounded-3 shadow-sm services-section">
+            <div class="row justify-content-between" style="cursor: pointer;">
+                <div class="col-3 border rounded-3 shadow-sm services-section" id="div0" onmouseover="hover(img00);" onmouseout="unhover(img00);"> 
                     <img class="pt-4 ps-3" src="assets/images/box.png" alt="">
                     <h4 class="mt-4 ps-3">Maritime</h4>
                     <p class="ps-3 pb-4">Toutes les demarches disponibles via Portnet</p>
-                    <div class="rounded-bottom shadow-sm voir-plus pt-4 pe-4" id="div00">
-                      <button type="button" class="btn"><h4><img id="img00" src="assets/images/right-arrow.png" alt="" width="20" height="20" class="me-3">Voir plus</h4></button>
+                    <div class="rounded-bottom shadow-sm voir-plus pt-4 pe-4" id="div00" onmouseover="hover(img00);" onmouseout="unhover(img00);">
+                      <button type="button" class="btn"><h4><img id="img00" src="assets/images/right-arrow.png" alt="" width="20" height="20" class="me-3" onmouseover="hover(img00);" onmouseout="unhover(img00);">Voir plus</h4></button>
                     </div>
                 </div>
-                <div class="col-3 border rounded-3 shadow-sm services-section">
+                <div class="col-3 border rounded-3 shadow-sm services-section" id="div1" onmouseover="hover(img01);" onmouseout="unhover(img01);">
                     <img class="pt-4 ps-3" src="assets/images/export.png" alt="">
                     <h4 class="mt-4 ps-3">Import</h4>
                     <p class="ps-3 pb-4">Toutes les demarches disponibles via Portnet</p>
-                    <div class="rounded-bottom shadow-sm voir-plus pt-4 pe-4" id="div01">
-                      <button type="button" class="btn"><h4><img id="img01" src="assets/images/right-arrow.png" alt="" width="20" height="20" class="me-3">Voir plus</h4></button>
+                    <div class="rounded-bottom shadow-sm voir-plus pt-4 pe-4" id="div01" onmouseover="hover(img01);" onmouseout="unhover(img01);">
+                      <button type="button" class="btn"><h4><img id="img01" src="assets/images/right-arrow.png" alt="" width="20" height="20" class="me-3" onmouseover="hover(img01);" onmouseout="unhover(img01);">Voir plus</h4></button>
                     </div>
                 </div>
-                <div class="col-3 border rounded-3 shadow-sm services-section">
+                <div class="col-3 border rounded-3 shadow-sm services-section" id="div2" onmouseover="hover(img02);" onmouseout="unhover(img02);">
                     <img class="pt-4 ps-3" src="assets/images/export.png" alt="">
                     <h4 class="mt-4 ps-3">Export</h4>
                     <p class="ps-3 pb-4">Toutes les demarches disponibles via Portnet</p>
-                    <div class="rounded-bottom shadow-sm voir-plus pt-4 pe-4" id="div02">
-                      <button type="button" class="btn"><h4><img id="img02" src="assets/images/right-arrow.png" alt="" width="20" height="20" class="me-3">Voir plus</h4></button>
+                    <div class="rounded-bottom shadow-sm voir-plus pt-4 pe-4" id="div02" onmouseover="hover(img02);" onmouseout="unhover(img02);">
+                      <button type="button" class="btn"><h4><img id="img02" src="assets/images/right-arrow.png" alt="" width="20" height="20" class="me-3" onmouseover="hover(img02);" onmouseout="unhover(img02);">Voir plus</h4></button>
                     </div>
                 </div>
-                <div class="col-3 border rounded-3 shadow-sm services-section">
+                <div class="col-3 border rounded-3 shadow-sm services-section" id="div3" onmouseover="hover(img03);" onmouseout="unhover(img03);">
                     <img class="pt-4 ps-3" src="assets/images/box.png" alt="">
                     <h4 class="mt-4 ps-3">MEAD</h4>
                     <p class="ps-3 pb-4">Toutes les demarches disponibles via Portnet</p>
-                    <div class="rounded-bottom shadow-sm voir-plus pt-4 pe-4" id="div03">
-                      <button type="button" class="btn"><h4><img id="img03" src="assets/images/right-arrow.png" alt="" width="20" height="20" class="me-3">Voir plus</h4></button>
+                    <div class="rounded-bottom shadow-sm voir-plus pt-4 pe-4" id="div03" onmouseover="hover(img03);" onmouseout="unhover(img03);">
+                      <button type="button" class="btn"><h4><img id="img03" src="assets/images/right-arrow.png" alt="" width="20" height="20" class="me-3" onmouseover="hover(img03);" onmouseout="unhover(img03);">Voir plus</h4></button>
                     </div>
                 </div>
             </div>
@@ -116,15 +112,15 @@
             <h2 style="padding-top: 80px;">Nos Indicateurs</h2>
             <p>Toutes les demarches disponibles via Portnet</p>
             <div class="row justify-content-between">
-                <div class="col-4 border-2 rounded shadow-sm text-center indicateur-section" id="i1" style="padding-top: 70px; padding-left: 40px; padding-right: 40px;">
+                <div class="col-4 border-2 rounded shadow-sm text-center indicateur-section" id="i1" style="padding-top: 70px; padding-left: 40px; padding-right: 40px; cursor: pointer;" onmouseover="hoverI(this);" onmouseout="unhoverI(this);">
                     <h2 style="font-size: 50px;">4K</h2>
                     <p>Nbr de conteneurs <br> inspectés</p>
                 </div>
-                <div class="col-4 border-2 rounded shadow-sm text-center indicateur-section" id="i2" style="padding-top: 70px; padding-left: 40px; padding-right: 40px;">
+                <div class="col-4 border-2 rounded shadow-sm text-center indicateur-section" id="i2" style="padding-top: 70px; padding-left: 40px; padding-right: 40px; cursor: pointer;" onmouseover="hoverI(this);" onmouseout="unhoverI(this);">
                     <h2 style="font-size: 50px;">24k</h2>
                     <p>Nbr de conteneurs <br> inspectés</p>
                 </div>
-                <div class="col-4 border-2 rounded shadow-sm text-center indicateur-section" id="i3" style="padding-top: 70px; padding-left: 40px; padding-right: 40px;">
+                <div class="col-4 border-2 rounded shadow-sm text-center indicateur-section" id="i3" style="padding-top: 70px; padding-left: 40px; padding-right: 40px; cursor: pointer;" onmouseover="hoverI(this);" onmouseout="unhoverI(this);">
                     <h2 style="font-size: 50px;">8,31J</h2>
                     <p>Délai moyen <br> de séjour global</p>
                 </div>
@@ -139,11 +135,11 @@
                 <i class="fa fa-caret-down"></i>
               </button>
               <span class="fw-light" style="margin-left: 108px;">1-6 Resultat</span>
-              <button class="btn border dropbtn" style="margin-left: 830px; margin-top: -65px;"><span class="fw-light">Trier</span>
+              <button class="btn border dropbtn" style="margin-left: 900px; margin-top: -65px;"><span class="fw-light">Trier</span>
                 <i class="fa fa-caret-down"></i>
               </button>
             </div>
-            <div class="row justify-content-between">
+            <div class="row justify-content-between" style="margin-right: -100px;">
                 <div class="col-4">
                   <img src="assets/images/unsplash_EhTcC9sYXsw.png" alt="" width="348" height="230">
                   <h5 class="fw-bold">Rencontre avec le nouvel <br> fournisseur</h5>
@@ -170,7 +166,7 @@
       <div class="col contact-section text-center" style="background: linear-gradient(180.99deg, #242B59 53.38%, rgba(68, 81, 168, 0) 459.34%); padding-top: 100px; padding-left: 40px; padding-right: 40px;">
         <h3 style="font-size: 30px;">Nouveau sur Guichet unique ?</h3>
         <p style="font-size: 20px;">Inscrivez-vous à notre newsletter <br> pour recevoir nos actualités</p>
-        <div class="input-group">
+        <div class="input-group" style="margin: auto;">
           <img class="fa" src="assets/images/mail.png" alt="">
           <input type="email" class="form-control" placeholder="Entrer votre adresse émail" style="width: 80px;">
         </div>
@@ -212,64 +208,30 @@
       </div>
       <div class="text-center pt-5"> 
         <ul class="list-inline">
-          <li class="list-inline-item"><a class="link-dark" style="text-decoration: none;" href="#">© 2021 portnet.ma</a></li>
-          <li class="list-inline-item"><a class="link-dark" style="text-decoration: none;" href="#">Politique de cookies</a></li>
-          <li class="list-inline-item"><a class="link-dark" style="text-decoration: none;" href="#">Conditions générales</a></li>
-          <li class="list-inline-item"><a class="link-dark" style="text-decoration: none;" href="#">Politique de confidentialité</a></li>
+          <li class="list-inline-item"><a class="link-dark" id="el-left" style="text-decoration: none;" href="#">© 2021 portnet.ma</a></li>
+          <li class="list-inline-item"><a class="link-dark" id="el-right0" style="text-decoration: none;" href="#">Politique de cookies</a></li>
+          <li class="list-inline-item"><a class="link-dark" id="el-right1" style="text-decoration: none;" href="#">Conditions générales</a></li>
+          <li class="list-inline-item"><a class="link-dark" id="el-right2" style="text-decoration: none;" href="#">Politique de confidentialité</a></li>
           <li><input type="image" src="assets/images/chat.png" class="chat-icon"/></li>
         </ul>
       </div>
     </footer> 
     <script>
-      $(document).ready(function(){
-          $('#div00').hover(
-              function(){$('#img00').attr("src","assets/images/right-arrow-white.png")},
-              function(){$('#img00').attr("src","assets/images/right-arrow.png")}
-          );
-      });
-      $(document).ready(function(){
-          $('#div01').hover(
-              function(){$('#img01').attr("src","assets/images/right-arrow-white.png")},
-              function(){$('#img01').attr("src","assets/images/right-arrow.png")}
-          );
-      });
-      $(document).ready(function(){
-          $('#div02').hover(
-              function(){$('#img02').attr("src","assets/images/right-arrow-white.png")},
-              function(){$('#img02').attr("src","assets/images/right-arrow.png")}
-          );
-      });
-      $(document).ready(function(){
-          $('#div03').hover(
-              function(){$('#img03').attr("src","assets/images/right-arrow-white.png")},
-              function(){$('#img03').attr("src","assets/images/right-arrow.png")}
-          );
-      });
-      
-      $(window).scroll(function(){
-        $("#s-l").css({"margin-top": ($(window).scrollTop()) + "px", "margin-left":($(window).scrollLeft()) + "px"});
-      });
+      function hover(element) {
+        element.setAttribute('src', 'assets/images/right-arrow-white.png');
+      }
 
-      $(document).ready(function(){
-          $('#i1').hover(
-              function(){$('#i1').attr("class","col-4 rounded shadow-lg text-center indicateur-section")},
-              function(){$('#i1').attr("class","col-4 border-2 rounded shadow-sm text-center indicateur-section")}
-          );
-      });
+      function unhover(element) {
+        element.setAttribute('src', 'assets/images/right-arrow.png');
+      }
 
-      $(document).ready(function(){
-          $('#i2').hover(
-              function(){$('#i2').attr("class","col-4 rounded shadow-lg text-center indicateur-section")},
-              function(){$('#i2').attr("class","col-4 border-2 rounded shadow-sm text-center indicateur-section")}
-          );
-      });
+      function hoverI(element) {
+        element.setAttribute('class', 'col-4 rounded shadow-lg text-center indicateur-section');
+      }
 
-      $(document).ready(function(){
-          $('#i3').hover(
-              function(){$('#i3').attr("class","col-4 rounded shadow-lg text-center indicateur-section")},
-              function(){$('#i3').attr("class","col-4 border-2 rounded shadow-sm text-center indicateur-section")}
-          );
-      });
+      function unhoverI(element) {
+        element.setAttribute('class', 'col-4 border-2 rounded shadow-sm text-center indicateur-section');
+      }
   </script>
 </body>
 </html>

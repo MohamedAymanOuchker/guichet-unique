@@ -1,15 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
-    font-family: 'Outfit';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     line-height: 172%;
 }
-body {
+html, body {
     position: relative;
 }
 main {
-    padding-left: 120px;
-    padding-right: 150px;
+    width: 1280px;
+    height: 100%;
+    margin: auto;
+}
+footer {
+    width: 1280px;
+    height: 100%;
+    margin: auto;
 }
 .custom-nav {
     height: 146.27px;
@@ -32,10 +39,10 @@ main {
 .text-spacing {
     text-indent: 30px;
 }
-.social-links {
+main .social-links {
     position: absolute;
-    left: 1375px;
-    top: 250px;
+    top: 30%;
+    right: 2%;
 }
 h1 {
     font-size: 60px;
@@ -68,7 +75,7 @@ h1 {
     padding: 0; 
 }
 .dropbtn {
-    width: 300px;
+    width: 301px;
 }
 .dropbtn i {
     margin-left: 220px;
@@ -90,22 +97,43 @@ div.layer {
     height: 100%;
 }
 .chat-icon{
-    position: absolute;
-    top: 2850px;
-    left: 1200px;
     width: 96px;
     height: 96px;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+}
+#div0:hover #div00 {
+    cursor: pointer;
+    background-color: #232A56;
+}
+#div1:hover #div01 {
+    cursor: pointer;
+    background-color: #232A56;
+}
+#div2:hover #div02 {
+    cursor: pointer;
+    background-color: #232A56;
+}
+#div3:hover #div03 {
+    cursor: pointer;
+    background-color: #232A56;
 }
 #div00:hover,#div01:hover,#div02:hover,#div03:hover{
+    cursor: pointer;
     background-color: #232A56;
 }
 #div00:hover h4,#div01:hover h4,#div02:hover h4,#div03:hover h4{
+    color: white;
+}
+#div0:hover button h4,#div1:hover button h4,#div2:hover button h4,#div3:hover button h4{
     color: white;
 }
 .fa{
     width: 16px;
     height: 16px;
     margin-top: 10px;
+    margin-right: 1px;
 }
 .input-group{
     border: 1px gray solid;
@@ -117,8 +145,31 @@ div.layer {
 .form-control{
     border: none;
 }
+#el-left {
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+}
+#el-right0 {
+    position: absolute;
+    bottom: 0%;
+    right: 10%;
+}
+#el-right1 {
+    position: absolute;
+    bottom: 0%;
+    right: 22%;
+}
+#el-right2 {
+    position: absolute;
+    bottom: 0%;
+    right: 35%;
+}
+#scroller {
+    position: fixed;
+}
 @media screen and (max-width: 1000px) {
     body {
         position: absolute;
     }
-  }
+}
