@@ -13,6 +13,11 @@ main {
     height: 100%;
     margin: auto;
 }
+.fixed {
+    width: 1295px;
+    height: 100%;
+    margin: auto;
+}
 footer {
     width: 1280px;
     height: 100%;
